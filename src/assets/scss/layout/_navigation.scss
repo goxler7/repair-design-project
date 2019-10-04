@@ -1,0 +1,31 @@
+.nav {
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    margin: 10px 7px;
+  }
+
+  &__link {
+    font: 400 1.4rem $mainFont;
+    color: #fff;
+    text-transform: uppercase;
+
+    &:hover, &:focus {
+      color: $primaryColor;
+      transition: all 0.3s;
+    }
+  }
+
+  @media screen and (min-width:$smTabletWidth) {
+    &__item {
+      margin: 0;
+      &:not(:last-child) {
+        margin: 0 47px 0 0;
+      }
+    }
+  }
+}
+

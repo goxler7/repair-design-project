@@ -1,0 +1,11 @@
+.logo {
+  flex-shrink: 0;
+  font: 700 1.2rem $mainFont;
+  text-transform: uppercase;
+  color: $primaryColor;
+
+  @media screen and (min-width: $mobileWidth) {
+    font-size: 1.4rem;
+  }
+}
+

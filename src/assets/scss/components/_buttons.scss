@@ -1,0 +1,23 @@
+button {
+  width: 100%;
+  height: 51px;
+  background: $primaryColor;
+  font: 700 1.3rem $mainFont;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+  @media screen and (min-width: $tabletWidth) {
+    border-radius: 2px;
+  }
+}
+
+.button-request {
+  width: 161px;
+  height: 37px;
+  border-radius: 2px;
+}
+
+.button-transparent {
+  background: none;
+  border: 1px solid #fff;
+}

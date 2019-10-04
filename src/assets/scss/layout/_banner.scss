@@ -1,0 +1,111 @@
+.banner {
+  background: $bgColor;
+
+  .wrapper {
+    display: flex;
+    height: 476px;
+    padding: 0;
+  }
+
+  .sidebar {
+    display: none;
+  }
+
+  &__title {
+    display: flex;
+    flex-direction: column;
+    font-size: 2.3rem;
+    line-height: 1.32;
+    color: #fff;
+    margin-top: 85px;
+    span span {
+      color: $primaryColor;
+    }
+  }
+
+  &__content {
+    flex-grow: 1;
+    background: url("/assets/images/bg-transparent.svg") repeat,
+                url("/assets/images/banner__bg-mobile.png") no-repeat;
+    background-size: cover;
+    padding: 0 18px;
+  }
+
+  &__description {
+    max-width: 310px;
+    font-size: 1.8rem;
+    line-height: 1.35;
+    color: #fff;
+    margin-top: 16px;
+  }
+
+  &__buttons-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 32px;
+    .button:last-child {
+      margin-top: 26px;
+    }
+
+    @media screen and (min-width: $mobileWidth) {
+      .button {
+        flex-basis: 207px;
+        &:last-child {
+          margin-left: 19px;
+          margin-top: 0;
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: $mobileWidth) {
+    &__content {
+      background: url("/assets/images/bg-transparent.svg") repeat,
+                  url("/assets/images/banner__bg.png") 50% 50% no-repeat;
+      background-size: cover;
+    }
+
+    &__buttons-container { 
+      margin-top: 61px;
+    }
+
+    &__description {
+      max-width: 350px;
+    }
+  }
+  
+  @media screen and (min-width: $smTabletWidth) {
+    &__title {
+      font-size: 4rem;
+    }
+  
+    &__description {
+      max-width: 420px;
+      font-size: 2.2rem;
+    }
+
+    &__content {
+      padding: 0 60px;
+    }
+  }
+
+  @media screen and (min-width: $tabletWidth) {
+    .wrapper {
+      height: 707px;
+    }
+
+    &__title {
+      margin-top: 194px
+    }
+
+    &__description {
+      margin-top: 19px;
+    }
+
+    .sidebar {
+      flex-basis: 82px;
+      display: flex;
+    }
+  }
+
+}

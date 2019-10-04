@@ -1,10 +1,34 @@
 @import "./base/reset";
 @import "./base/typography";
+@import "./utils/mixins";
+@import "./utils/variables";
+@import "./layout/header";
+@import "./layout/navigation";
+@import "./layout/banner";
+@import "./layout/sidebar";
+@import "./layout/projects";
+@import "./layout/footer";
+@import "./components/logo";
+@import "./components/buttons";
+@import "./components/links";
+@import "./pages/landing";
 
-body {
-  background: complement(green);
+
+html {
+  font-size: 10px;
 }
 
-h1 {
-  font-family: 'FuturaBookC';
+body {
+  font-family: $mainFont;
+}
+
+.wrapper {
+  max-width: $desktopWidth;
+  margin: 0 auto;
+  padding: 0 18px;
+}
+
+.title {
+  font-family: $titleFont;
+  text-transform: uppercase;
 }

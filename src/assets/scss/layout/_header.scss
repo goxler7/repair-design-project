@@ -1,0 +1,75 @@
+.header {
+  background: $bgColor;
+
+  .nav {
+    display: none;
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 57px;
+  }
+
+  .callback-block {
+    display: flex;
+    align-items: center;
+    .button-request {
+      display: none;
+    }
+  }
+
+  @media screen and (min-width: $mobileWidth) {
+    .nav {
+      display: block;
+      margin: 10px 0;
+    }
+
+    .wrapper {
+      flex-direction: column;
+      padding: 18px;
+    }
+  }
+
+  @media screen and (min-width: $smTabletWidth) {
+    .callback-block {
+      margin: 0 14px 0 31px;
+      .button-request {
+        display: block;
+        margin-left: 45px;
+      }
+    }
+
+    .logo {
+      flex-basis: 100%;
+    }
+  }
+
+  @media screen and (min-width: $tabletWidth) {
+    .wrapper {
+      flex-direction: row;
+      justify-content: center;
+    }
+    
+    .logo {
+      text-align: center;
+    }
+  }
+
+  @media screen and (min-width: $desktopWidth) {
+    .wrapper {
+      min-height: 83px;
+    }
+    
+    .logo {
+      flex-basis: auto;
+      margin: 0 55px 0 0;
+    }
+  }
+
+}
+
+
