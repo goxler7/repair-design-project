@@ -2,19 +2,19 @@
 @import "./base/typography";
 @import "./utils/mixins";
 @import "./utils/vars";
-@import "./layout/header";
-@import "./layout/navigation";
 @import "./components/descriptions";
-@import "./layout/banner";
-@import "./layout/titles";
-@import "./layout/projects";
-@import "./layout/footer";
-
 @import "./components/buttons";
 @import "./components/links";
-// @import "./components/inputs";
-// @import "./pages/landing";
-// @import "./pages/online-control";
+@import "./components/titles";
+@import "./components/inputs";
+@import "./layout/navigation";
+@import "./layout/header";
+@import "./layout/banner";
+
+
+@import "./layout/projects";
+@import "./layout/online_control";
+@import "./layout/footer";
 
 
 html {
@@ -24,7 +24,6 @@ html {
 body {
   font: 400 1.4rem $mainFont;
   color: $defaultColorLight;
-  background: black;
 }
 
 .wrapper {

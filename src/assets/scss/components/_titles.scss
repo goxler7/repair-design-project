@@ -30,6 +30,17 @@
       font-size: 2.7rem;
     }
   }
+
+  .online_control &, 
+  .types &, .design_project &, 
+  .team &, .clients & {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &--inner_text {
+      margin-bottom: 5px;
+    }
+  }
 }
 
 .block_title {

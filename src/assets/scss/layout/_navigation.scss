@@ -83,6 +83,10 @@
     background: none;
     position: relative;
     cursor: pointer;
+    
+    &:hover, &:focus {
+      transform: scale(1.1);
+    }
   }
 
   &--indicators_block {
