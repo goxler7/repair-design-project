@@ -3,109 +3,102 @@
 
   .wrapper {
     display: flex;
-    height: 476px;
+    min-height: 476px;
     padding: 0;
   }
 
-  .sidebar {
-    display: none;
-  }
-
-  &__title {
-    display: flex;
-    flex-direction: column;
-    font-size: 2.3rem;
-    line-height: 1.32;
-    color: #fff;
-    margin-top: 85px;
-    span span {
-      color: $primaryColor;
-    }
-  }
-
-  &__content {
+  &--content {
     flex-grow: 1;
-    background: url("/assets/images/bg-transparent.svg") repeat,
-                url("/assets/images/banner__bg-mobile.png") no-repeat;
+    background-image: url("/assets/images/banner__bg-mobile.png");
+    background-repeat: no-repeat;
+    background-color: rgba(0,0,0,0.7);
+    background-blend-mode: overlay;
     background-size: cover;
+    background-position: 50% 50%;
     padding: 0 18px;
   }
 
-  &__description {
+  .title {
     max-width: 310px;
-    font-size: 1.8rem;
-    line-height: 1.35;
-    color: #fff;
+    margin-top: 85px;
+  }
+
+  .description {
+    max-width: 310px;
     margin-top: 16px;
   }
 
-  &__buttons-container {
+  &--btns_container {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     margin-top: 32px;
-    .button:last-child {
-      margin-top: 26px;
+    .btn-transparent {
+      margin: 26px 0 0;
+    }
+  }
+
+  &--sidebar {
+    order: -1;
+    display: none;
+    width: 82px;
+    height: 707px;
+    align-items: center;
+    justify-content: center;
+    .instagram_link {
+      transform: rotate(90deg)
+    }
+  }
+
+  @media screen and (min-width: $mobileWidth) {
+    &--content {
+      background-image: url("/assets/images/banner__bg.png");
     }
 
-    @media screen and (min-width: $mobileWidth) {
-      .button {
-        flex-basis: 207px;
-        &:last-child {
-          margin-left: 19px;
-          margin-top: 0;
+    .description {
+      max-width: 350px;
+    }
+
+    &--btns_container {
+      flex-direction: row;
+      margin-top: 61px;
+      .btn {
+        width: 207px;
+        &-transparent {
+          margin: 0 0 0 20px;
         }
       }
     }
   }
 
-  @media screen and (min-width: $mobileWidth) {
-    &__content {
-      background: url("/assets/images/bg-transparent.svg") repeat,
-                  url("/assets/images/banner__bg.png") 50% 50% no-repeat;
-      background-size: cover;
-    }
-
-    &__buttons-container { 
-      margin-top: 61px;
-    }
-
-    &__description {
-      max-width: 350px;
-    }
-  }
-  
   @media screen and (min-width: $smTabletWidth) {
-    &__title {
-      font-size: 4rem;
+    &--content {
+      padding: 0 60px;
     }
-  
-    &__description {
-      max-width: 420px;
-      font-size: 2.2rem;
+    
+    .title {
+      max-width: 530px;
     }
 
-    &__content {
-      padding: 0 60px;
+    .description {
+      max-width: 420px;
     }
   }
 
   @media screen and (min-width: $tabletWidth) {
     .wrapper {
-      height: 707px;
+      min-height: 707px;
     }
 
-    &__title {
-      margin-top: 194px
+    .title {
+      margin-top: 194px;
     }
 
-    &__description {
+    .description {
       margin-top: 19px;
     }
 
-    .sidebar {
-      flex-basis: 82px;
+    &--sidebar {
       display: flex;
     }
   }
-
 }

@@ -1,0 +1,11 @@
+.footer {
+  display: none;
+  
+  .wrapper { 
+    min-height: 133px
+  }
+
+  @media screen and (min-width: $smDesktopWidth) {
+    display: block;
+  }
+}

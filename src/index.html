@@ -5,25 +5,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>IC "Repair Design Project"</title>
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 </head>
 <body>
 
   <header class="header">
     <div class="wrapper">
       <h1 class="logo">IC "Repair Design Project"</h1>
-      <nav class="nav">
-        <ul class="nav__list">
-          <li class="nav__item"><a class="nav__link" href="#">Home</a></li>
-          <li class="nav__item"><a class="nav__link" href="#">Projects</a></li>
-          <li class="nav__item"><a class="nav__link" href="#">Measurement</a></li>
-          <li class="nav__item"><a class="nav__link" href="#">Team</a></li>
-          <li class="nav__item"><a class="nav__link" href="#">Reviews</a></li>
-          <li class="nav__item"><a class="nav__link" href="#">Contacts</a></li>
+      <nav class="main_nav">
+        <ul class="main_nav--list">
+          <li class="main_nav--item"><a class="main_nav--link main_nav--link-selected" href="#">Home</a></li>
+          <li class="main_nav--item"><a class="main_nav--link" href="#">Projects</a></li>
+          <li class="main_nav--item"><a class="main_nav--link" href="#">Measurement</a></li>
+          <li class="main_nav--item"><a class="main_nav--link" href="#">Team</a></li>
+          <li class="main_nav--item"><a class="main_nav--link" href="#">Reviews</a></li>
+          <li class="main_nav--item"><a class="main_nav--link" href="#">Contacts</a></li>
         </ul>
       </nav>
-      <div class="callback-block">
-        <a class="phone-link" href="tel:+79287683239">+7 (928) 768-32-39</a>
-        <button class="button-request">Request a call</button>
+      <div class="callback_block">
+        <a class="phone_link" href="tel:+79287683239">+7 (928) 768-32-39</a>
+        <button class="btn btn-request">Request a call</button>
       </div>
     </div>
   </header>
@@ -31,81 +32,250 @@
   <main class="main">
     <section class="banner">
       <div class="wrapper">
-        <aside class="sidebar">
-          <a class="instagram-link" href="http://instagram.com" target="_blank" rel="noopener noreferrer">
-            <span class="instagram-link__inner-text">Instagram</span>
-            <svg class="instagram-link__inner-svg" width="2" height="51" viewBox="0 0 2 51" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M1 9.53674e-07L1 51" stroke="#E3B873" stroke-width="1.5"/>
-            </svg>
-          </a>
-        </aside>
-        <div class="banner__content">
-            <h2 class="title banner__title">
-              <span>Turnkey Repair in the</span>
-              <span>city of <span>Rostov-on-Don</span></span>
+        <div class="banner--content">
+            <h2 class="title">
+              Turnkey Repair in the city of <span class="title--inner_text-highlighted">Rostov-on-Don</span>
             </h2>
-            <p class="description banner__description">
+            <p class="description">
                 Get ready-made turnkey repairs on time with work time 
                 saving up to 45 days and 20% from cost of materials due to 
                 the organization of work
             </p>
-            <div class="banner__buttons-container">
-              <button class="button">Calculate the cost</button>
-              <button class="button button-transparent">Submit your application</button>
+            <div class="banner--btns_container">
+              <button class="btn">Calculate the cost</button>
+              <button class="btn btn-transparent">Submit your application</button>
             </div>
         </div>
+        <aside class="banner--sidebar">
+          <a class="instagram_link" href="http://instagram.com" target="_blank" rel="noopener noreferrer">
+            <span class="instagram_link--inner_text">Instagram</span>
+            <svg class="instagram_link--inner_svg" width="52" height="3" viewBox="0 0 52 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M51.5 1.5H0.5" stroke="#E3B873" stroke-width="1.5"/>
+            </svg>
+          </a>
+        </aside>
       </div>
     </section>
 
-    <section class="projects">
+   <section class="projects">
       <div class="wrapper">
         
-        <h2 class="title projects-title">
-          <span class="projects-title__inner-text">Completed projects</span>
-          <svg class="projects-title__inner-svg" width="92" height="1" viewBox="0 0 92 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <h2 class="title">
+          <span class="title--inner_text">Completed projects</span>
+          <svg class="title--inner_svg" width="92" height="1" viewBox="0 0 92 1" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect x="0" width="92" height="1" fill="#E3B873"/>
           </svg>
         </h2>
-        <p class="description projects__description">
+        <p class="description">
           Only a small part of the work performed 
           by our company is presented on the site. 
           For 14 years on in the construction market we 
           have made happy more than 1000 families
         </p>
 
-        <div class="projects-slider">
-          <section class="projects-slider__gallery">
-            <img src="./assets/images/gallery-photo1.png" alt="photo1">
-            <img src="./assets/images/gallery-photo2.png" alt="photo2">
-          </section>
+        <section class="projects--gallery">
+          <nav class="nav_bar">
+            <ul class="nav_bar--list">
+              <li class="nav_bar--item nav_bar--item-active">Rostov-On-Don, Admiral</li>
+              <li class="nav_bar--item">Sochi Thieves</li>
+              <li class="nav_bar--item">Rostov-On-Don Patriotic</li>
+            </ul>
+          </nav>
+          <div class="projects--slider">
+            <img class="item" src="./assets/images/gallery-photo1.png" alt="photo1">
+            <img class="item" src="./assets/images/gallery-photo2.png" alt="photo2">
+            <div class="slider_nav">
+              <button class="round_btn round_btn-left">
+                <i class="fa fa-angle-left" aria-hidden="true"></i>
+              </button>
+              <button class="round_btn round_btn-right">
+                <i class="fa fa-angle-right" aria-hidden="true"></i>
+              </button>
+            </div>
+          </div>
+        </section>
 
-          <section class="projects-slider__specs-container">
-            <section class="projects-slider__specs-container__block">
-              <h3 class="title projects-slider__specs-container__title">City:</h3>
-              <p class="projects-slider__specs-container__text">Rostov-on-Don LCD admiral</p>
-            </section>
-            <section class="projects-slider__specs-container__block">
-              <h3 class="title projects-slider__specs-container__title">Apartment area:</h3>
-              <p class="projects-slider__specs-container__text">81 m2</p>
-            </section>
-            <section class="projects-slider__specs-container__block">
-              <h3 class="title projects-slider__specs-container__title">Repair time:</h3>
-              <p class="projects-slider__specs-container__text">3.5 months</p>
-            </section>
-            <section class="projects-slider__specs-container__block">
-              <h3 class="title projects-slider__specs-container__title">Repair Cost:</h3>
-              <p class="projects-slider__specs-container__text">Upon request</p>
-            </section>
+        <section class="projects--specs_container">
+          <section class="projects--block">
+            <h3 class="block_title">City:</h3>
+            <p class="block_description">Rostov-on-Don LCD admiral</p>
           </section>
+          <section class="projects--block">
+            <h3 class="block_title">Apartment area:</h3>
+            <p class="block_description">81 m2</p>
+          </section>
+          <section class="projects--block">
+            <h3 class="block_title">Repair time:</h3>
+            <p class="block_description">3.5 months</p>
+          </section>
+          <section class="projects--block">
+            <h3 class="block_title">Repair Cost:</h3>
+            <p class="block_description">Upon request</p>
+          </section>
+        </section>
+
+        <div class="arrow_nav">
+          <button class="arrow_nav--button arrow_nav--button-left">
+            <svg viewBox="0 0 42 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M6.63807 13.2761L2.29917e-05 6.63808L6.63807 3.80641e-05L7.58563 0.947606L1.89516 6.63808L7.58563 12.3286L6.63807 13.2761Z" fill="white"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M0.947579 5.96828L41.4556 5.96829L41.4556 7.30835L0.947578 7.30834L0.947579 5.96828Z" fill="white"/>
+            </svg>
+          </button>
+          <div class="arrow_nav--indicators_block">
+            <span class="arrow_nav--indicator arrow_nav--indicator-active"></span>
+            <span class="arrow_nav--indicator"></span>
+            <span class="arrow_nav--indicator"></span>
+          </div>
+          <button class="arrow_nav--button arrow_nav--button-right">
+            <svg viewBox="0 0 42 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M35.0451 0L41.6831 6.63804L35.0451 13.2761L34.0975 12.3285L39.788 6.63804L34.0975 0.947567L35.0451 0Z" fill="white"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M40.7356 7.30784L0.227569 7.30784L0.22757 5.96777L40.7356 5.96778L40.7356 7.30784Z" fill="white"/>
+            </svg>
+          </button>
         </div>
-
+      </div>
+    </section>
+ <!-- 
+    <section class="online-control">
+      <div class="wrapper">
+        <h2 class="title online-control-title">
+          <span class="online-control-title__inner-text">Online control</span>
+          <svg class="online-control-title__inner-svg" width="114" height="29" viewBox="0 0 114 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="0.000488281" y="13.812" width="32" height="1.54334" rx="0.771672" fill="#E3B873"/>
+            <rect x="82.0005" y="13.812" width="32" height="1.54334" rx="0.771672" fill="#E3B873"/>
+            <path d="M73.8511 9.76553L49.7306 0.829306C49.4221 0.7153 49.0793 0.873058 48.9655 1.18182C48.9653 1.18207 48.9653 1.18232 48.965 1.18257L46.2949 8.45071C46.1814 8.75948 46.3396 9.102 46.6484 9.2155H46.6489L49.4448 10.2421L48.8288 11.9204C48.7155 12.2292 48.8738 12.5712 49.1825 12.6847L54.7753 14.738L54.3643 15.8569C53.9908 16.8589 54.3393 17.987 55.2134 18.6032V21.6434H47.1974C46.8094 20.7564 46.0154 20.1123 45.0671 19.9158V18.6648C45.0671 18.3357 44.8006 18.069 44.4713 18.069H42.0694C41.7404 18.069 41.4736 18.3357 41.4736 18.6648V28.1965C41.4736 28.5258 41.7404 28.7923 42.0694 28.7923H44.4713C44.8006 28.7923 45.0671 28.5258 45.0671 28.1965V26.9457C46.0154 26.7489 46.8094 26.1051 47.1974 25.2178H55.2134V25.8136C55.2134 26.8007 56.0134 27.601 57.0005 27.601C57.9875 27.601 58.7878 26.8007 58.7878 25.8136V19.214C59.3293 18.9455 59.7476 18.4797 59.9561 17.9122L60.3671 16.7934L65.4004 18.6403C65.4662 18.6645 65.5354 18.6768 65.6054 18.6768C65.8552 18.6768 66.0787 18.521 66.1649 18.2865L66.3882 17.6782C68.3268 18.043 70.1939 16.7672 70.5584 14.8288C70.6932 14.1125 70.6057 13.3722 70.3077 12.7072L73.9191 10.8528C74.2119 10.7028 74.3276 10.3438 74.1776 10.051C74.1096 9.91804 73.9941 9.81553 73.8541 9.76378L73.8511 9.76553ZM56.4047 19.146L56.898 19.3248C57.1225 19.4053 57.358 19.4515 57.5962 19.4618V21.6434H56.4047V19.146ZM43.8758 27.601H42.6652V19.2605H43.8758V27.601ZM46.2586 24.0265C46.2576 24.7836 45.7806 25.4584 45.0671 25.7119V21.1496C45.7806 21.4029 46.2576 22.0777 46.2586 22.835V24.0265ZM47.4687 22.835H57.5962V24.0265H47.4687V22.835ZM57.0005 26.4094C56.6714 26.4094 56.4047 26.1426 56.4047 25.8136V25.2178H57.5962V25.8136C57.5962 26.1426 57.3295 26.4094 57.0005 26.4094ZM59.2488 16.3831L58.8378 17.5019C58.6108 18.119 57.9265 18.4355 57.309 18.209L56.1884 17.7985C55.5709 17.5717 55.2539 16.8872 55.4806 16.2694C55.4806 16.2694 55.4806 16.2694 55.4806 16.2691L55.8919 15.1511L58.9116 16.2596L59.2488 16.3831ZM65.2521 17.3184L50.1523 11.7736L50.5636 10.6548L59.5111 13.9405C59.7229 14.0175 59.9604 13.9693 60.1251 13.8152L61.797 12.2414L66.4842 13.963L65.2521 17.3184ZM69.2801 14.9901C68.9026 16.0079 67.8873 16.6439 66.807 16.5391L67.7275 14.0315L69.2311 13.2572C69.4664 13.8077 69.4839 14.4273 69.2801 14.9901ZM67.2693 12.9302C67.2377 12.9329 67.2065 12.9384 67.1757 12.9467L61.8642 10.9963C61.6525 10.9186 61.4149 10.9668 61.2504 11.1214L59.5766 12.6954L47.6187 8.3042L49.8773 2.15438L72.1675 10.4126L67.2693 12.9302Z" fill="#E3B873"/>
+            <path d="M53.1292 8.70337L52.6038 10.1233M55.419 9.5434L54.8935 10.9633M57.641 10.3699L57.1155 11.7898" stroke="#E3B873" stroke-linecap="round"/>
+          </svg>
+        </h2>
+        <div class="online-control__video">          
+          <iframe class="online-control__video__inner" src="https://www.youtube.com/embed/uJ5RT1lpD0M?controls=0" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen con></iframe>
+        </div>
+        <svg class="online-control__separator" width="55" height="2" viewBox="0 0 55 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect class="online-control__separator__inner" width="55" height="1.54334" rx="0.771672" />
+        </svg>
+        <p class="description online-control__description">At each facility, 
+          a camera is installed that broadcasts the progress of work on the clock. 
+          At any time, you can go to our website and monitor the progress 
+          of work in your apartment. Y ou can watch the live broadcast from one of our facilities! 
+          Leave a request below and you will receive a link to the broadcast.</p>
+        <form action="#" class="form online-control__form">
+          <p class="text-input">
+            <label for="online-control__form__input-field-name" class="text-input__label">Name</label>
+            <input id="online-control__form__input-field-name" name="name" type="text" class="text-input__field" placeholder="What is your name:" pattern="[A-Za-zА-Яа-яЁё]" required>
+          </p>
+          <p class="text-input">
+            <label for="online-control__form__input-field-phone" class="text-input__label">Phone</label>
+            <input id="online-control__form__input-field-phone" name="phone" type="tel" class="text-input__field" placeholder="Your phone number:" pattern="([0-9]{1,3}[0-9]{3}[0-9]{3}[0-9]{4})" required>
+          </p>
+          <div class="checkbox-input">
+            <input type="checkbox" name="agreement" id="online-control__form__checkbox" class="checkbox-input__box" required>
+            <label for="online-control__form__checkbox" class="checkbox-input__label">
+              <span class="checkbox-input__label__inner-box">
+                <svg  class="checkbox-input__label__inner-box__svg" width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8.85335 1.11133L3.14181 6.82287L0.545654 4.22671" stroke="white" stroke-width="1.5"/>
+                </svg>  
+              </span>
+              <span class="checkbox-input__label__inner-text">I agree to the processing of personal data</span>
+            </label>
+          </div>
+          <button class="form__button-submit button button-submit" type="submit">Submit</button>
+        </form>
       </div>
     </section>
 
-  </main>
+    <section class="types">
+      <div class="wrapper">
+        <h2 class="title types-title">
 
-  <footer class="footer">
+        </h2>
+        <div class="cards-container types__cards-container">
+          <div class="card">
+            <img src="./assets/images/types-photo1.png" alt="card_photo" class="card__photo">
+            <div class="card__specs-container">
+              <h3 class="title card__title">Redecorating</h3>
+              <ul class="card__specs-list">
+                <li class="card__specs-list__item">Dismantling of old coatings</li>
+                <li class="card__specs-list__item">Wallpapering</li>
+                <li class="card__specs-list__item">Painting walls and ceilings</li>
+                <li class="card__specs-list__item">Laying flooring</li>
+                <li class="card__specs-list__item">Replacing plumbing</li>
+                <li class="card__specs-list__item">Replacing sockets and switches</li>
+                <li class="card__specs-list__item">Replacing doors</li>
+              </ul>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./assets/images/types-photo2.png" alt="card_photo" class="card__photo">
+            <div class="card__specs-container">
+              <h3 class="title card__title">Overhaul</h3>
+              <ul class="card__specs-list">
+                <li class="card__specs-list__item">Dismantling of old coatings</li>
+                <li class="card__specs-list__item">Wallpapering</li>
+                <li class="card__specs-list__item">Painting walls and ceilings</li>
+                <li class="card__specs-list__item">Laying flooring</li>
+                <li class="card__specs-list__item">Replacing plumbing</li>
+                <li class="card__specs-list__item">Replacing sockets and switches</li>
+                <li class="card__specs-list__item">Replacing doors</li>
+              </ul>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./assets/images/types-photo3.png" alt="card_photo" class="card__photo">
+            <div class="card__specs-container">
+              <h3 class="title card__title">Designer Repair</h3>
+              <ul class="card__specs-list">
+                <li class="card__specs-list__item">Dismantling of old coatings</li>
+                <li class="card__specs-list__item">Wallpapering</li>
+                <li class="card__specs-list__item">Painting walls and ceilings</li>
+                <li class="card__specs-list__item">Laying flooring</li>
+                <li class="card__specs-list__item">Replacing plumbing</li>
+                <li class="card__specs-list__item">Replacing sockets and switches</li>
+                <li class="card__specs-list__item">Replacing doors</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <section class="styling">
+      <div class="wrapper">
+        <h2 class="title styling-title">We realize your wildest fantasies</h2>
+      </div>
+    </section>
+
+    <section class="design">
+      <div class="wrapper">
+        <h2 class="title design-title"></h2>
+        <div class="design__cards-container">
+          <div class="design__card"></div>
+          <div class="design__card"></div>
+          <div class="design__card"></div>
+        </div>
+      </div>
+    </section> -->
+
+
+  </main> 
+
+  <footer class="header footer">
+    <div class="wrapper">
+      <p class="logo">IC "Repair Design Project"</p>
+      <nav class="main_nav">
+        <ul class="main_nav--list">
+          <li class="main_nav--item"><a class="main_nav--link main_nav--link-selected" href="#">Home</a></li>
+          <li class="main_nav--item"><a class="main_nav--link" href="#">Projects</a></li>
+          <li class="main_nav--item"><a class="main_nav--link" href="#">Measurement</a></li>
+          <li class="main_nav--item"><a class="main_nav--link" href="#">Team</a></li>
+          <li class="main_nav--item"><a class="main_nav--link" href="#">Reviews</a></li>
+          <li class="main_nav--item"><a class="main_nav--link" href="#">Contacts</a></li>
+        </ul>
+      </nav>
+      <div class="callback_block">
+        <a class="phone_link" href="tel:+79287683239">+7 (928) 768-32-39</a>
+        <button class="btn btn-request">Request a call</button>
+      </div>
+    </div>
   </footer>
 </body>
 </html>

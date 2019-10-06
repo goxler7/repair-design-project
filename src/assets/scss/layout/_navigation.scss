@@ -1,26 +1,25 @@
-.nav {
-  &__list {
+.main_nav {
+  &--list {
     display: flex;
     justify-content: space-between;
   }
 
-  &__item {
+  &--item {
     margin: 10px 7px;
   }
 
-  &__link {
+  &--link {
     font: 400 1.4rem $mainFont;
-    color: #fff;
+    color: $defaultColorLight;
     text-transform: uppercase;
 
-    &:hover, &:focus {
+    &:hover, &:focus, &-selected {
       color: $primaryColor;
-      transition: all 0.3s;
     }
   }
 
   @media screen and (min-width:$smTabletWidth) {
-    &__item {
+    &--item {
       margin: 0;
       &:not(:last-child) {
         margin: 0 47px 0 0;
@@ -29,3 +28,80 @@
   }
 }
 
+.nav_bar {
+  &--list {
+    display: flex;
+  }
+
+  &--item {
+    font: 1.4rem $titleFont;
+    text-transform: uppercase;
+    width: fit-content;
+    color: $defaultColorLight-transparent-30;
+    background: none;
+    padding: 10px 0;
+    cursor: pointer;
+    
+    &:hover {
+      color: $primaryColor;
+    }
+
+    &-active {
+      color: $primaryColor;
+      border-bottom: 1px solid $primaryColor;
+    }
+
+    &:not(:last-child) {
+      margin-right: 60.5px;
+    }
+  }
+}
+
+
+.slider_nav {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  width: 100%;
+  top: calc(50% - 18px);
+  padding: 0 14px;
+
+  @media screen and (min-width: $smTabletWidth) {
+    top: calc(50% - 27px);
+    padding: 0 14px;
+  }
+}
+
+.arrow_nav {
+  display: flex;
+  align-items: center;
+  
+  &--button {
+    width: 42px;
+    height: 14px;
+    line-height: 0;
+    background: none;
+    position: relative;
+    cursor: pointer;
+  }
+
+  &--indicators_block {
+    display: flex;
+    margin: 0 29px;
+  }
+
+  &--indicator {
+    background: $defaultColorLight-transparent-30;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    
+    &-active {
+      background: $defaultColorLight;
+    }
+
+    &:not(:last-child) {
+      margin-right: 17px;
+    }
+  }
+}

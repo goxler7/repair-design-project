@@ -1,0 +1,59 @@
+.title {
+  &--inner_text-highlighted {
+    color: $primaryColor;
+  } 
+
+  .banner & {
+    font-size: 2.3rem;
+    line-height: 1.33;
+    text-align: left;
+    @media screen and (min-width: $smTabletWidth) {
+      font-size: 4rem;
+    }
+  }
+
+  .projects &, .online_control &, 
+  .types &, .styles &, 
+  .design_project &, .team & {
+    font-size: 2.2rem;
+    line-height: 1.38;
+  }
+
+  .projects & {
+    letter-spacing: -0.07em;
+    color: $primaryColor;
+
+    @media screen and (min-width: $mobileWidth) {
+      text-align: left;
+    }
+    @media screen and (min-width: $smTabletWidth) {
+      font-size: 2.7rem;
+    }
+  }
+}
+
+.block_title {
+  font-family: $titleFont;
+  font-size: 1.4rem;
+  line-height: 1.38;
+  text-transform: none;
+  
+  .projects & {
+    color: $primaryColor;
+    text-transform: uppercase;
+  }
+
+  .types &, .design_project & {
+    font-size: 1.5rem;
+    color: $defaultColorDark-lighter;
+  }
+
+  .team & {
+    font-size: 1.8rem;
+    color: $defaultColorDark;
+  }
+
+  @media screen and (min-width: $smTabletWidth) {
+    font-size: 1.8rem;
+  }
+}

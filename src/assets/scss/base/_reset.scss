@@ -43,7 +43,7 @@ html { box-sizing: border-box; }
 
 img, audio, video { max-width: 100%; height: auto; }
 audio, canvas, iframe, video, img, svg { vertical-align: middle; }
-iframe { border: 0 }
+iframe, fieldset { border: 0 }
 
 // From
 textarea {

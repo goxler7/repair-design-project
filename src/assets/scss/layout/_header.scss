@@ -1,7 +1,7 @@
 .header {
   background: $bgColor;
 
-  .nav {
+  .main_nav {
     display: none;
   }
 
@@ -14,16 +14,16 @@
     min-height: 57px;
   }
 
-  .callback-block {
+  .callback_block {
     display: flex;
     align-items: center;
-    .button-request {
+    .btn-request {
       display: none;
     }
   }
 
   @media screen and (min-width: $mobileWidth) {
-    .nav {
+    .main_nav {
       display: block;
       margin: 10px 0;
     }
@@ -35,9 +35,9 @@
   }
 
   @media screen and (min-width: $smTabletWidth) {
-    .callback-block {
+    .callback_block {
       margin: 0 14px 0 31px;
-      .button-request {
+      .btn-request {
         display: block;
         margin-left: 45px;
       }
@@ -69,7 +69,6 @@
       margin: 0 55px 0 0;
     }
   }
-
 }
 
 

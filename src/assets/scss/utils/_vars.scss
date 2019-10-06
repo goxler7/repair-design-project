@@ -1,0 +1,28 @@
+
+$desktopWidth: 1440px;
+$smDesktopWidth: 1280px;
+$tabletWidth: 1024px;
+$smTabletWidth: 720px;
+$mobileWidth: 490px;
+
+// Colors
+
+$bgColor: #131313;
+$defaultColorLight: #fff;
+$defaultColorLight-transparent-75: rgba($defaultColorLight,0.75);
+$defaultColorLight-transparent-50: rgba($defaultColorLight,0.5);
+$defaultColorLight-transparent-30: rgba($defaultColorLight,0.3);
+$defaultColorLight-transparent-15: rgba($defaultColorLight,0.15);;
+$defaultColorDark: #181818;
+$defaultColorDark-lighter: #363636;
+$defaultColorDark-lighter-transparent-50: rgba($defaultColorDark-lighter, 0.5);
+$defaultColorDark-lighter-transparent-30: rgba($defaultColorDark-lighter,0.3);
+$primaryColor: rgb(227, 184, 115);
+$primaryColor-transparent-50: rgba(227, 184, 115, 0.5);
+$optionColor: rgba(149, 149, 149, 1);
+
+
+// Fonts
+$mainFont: "FuturaC", sans-serif;
+$optionFont: "Proxima Nova", sans-serif;
+$titleFont: "Yeseva One", serif;
