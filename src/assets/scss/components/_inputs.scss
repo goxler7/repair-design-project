@@ -34,6 +34,7 @@
 
       &--field {
         border-color: $defaultColorDark-lighter-transparent-30;
+        color: $defaultColorDark-lighter;
         
         &::placeholder {
           color: $defaultColorDark-lighter;
@@ -43,6 +44,12 @@
           border-color: $primaryColor;
         }
       }
+    }
+  }
+
+  @media screen and (min-width: $smDesktopWidth) {
+    &--field {
+      border-color: $defaultColorLight-transparent-15;
     }
   }
 }

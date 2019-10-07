@@ -1,0 +1,20 @@
+.types {
+  background: $defaultColorLight;
+  margin-top: -25px;
+  
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 83px 18px 0;
+  }
+
+  &--cards_container {
+    margin-top: 40px;
+  }
+
+  @media screen and (min-width: $tabletWidth) {
+    .wrapper {
+      padding: 83px 100px 0;
+    }
+  }
+}

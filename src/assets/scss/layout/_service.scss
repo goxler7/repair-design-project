@@ -1,0 +1,23 @@
+.service {
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 100px 0 0;
+  }
+
+  &--form {
+    background: $bgColor;
+    width: 506px;
+    padding: 28px 49px;
+    display: flex;
+    flex-direction: column;
+
+    &_title {
+      font-size: 2rem;
+      line-height: 1.25;
+      text-align: center;
+      align-self: center;
+      width: 250px;
+    }
+  }
+}
