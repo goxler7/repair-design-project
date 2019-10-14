@@ -13,7 +13,7 @@
   }
 
   .projects &, .online_control &, 
-  .types &, .styles &, 
+  .types &, .styling &, 
   .design_project &, .team & {
     font-size: 2.2rem;
     line-height: 1.38;
@@ -44,6 +44,20 @@
 
   .types & {
     color: $defaultColorDark;
+  }
+
+  .styling & {
+    color: $primaryColor;
+    @media screen and (min-width: $smTabletWidth) {
+      font-size: 2.7rem;
+    }
+  }
+
+  .design_project & {
+    @media screen and (min-width: $smTabletWidth) {
+      color: $defaultColorDark;
+      font-size: 2rem;
+    }
   }
 }
 

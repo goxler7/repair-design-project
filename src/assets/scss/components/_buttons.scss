@@ -22,7 +22,10 @@
   }
 
   @media screen and (min-width: $tabletWidth) {
-    border-radius: 2px;
+    .header &, .banner &, 
+    .online_control &, .footer & {
+      border-radius: 2px;
+    }
   }
 
   &-request {
@@ -34,6 +37,27 @@
     font-size: 1.5rem;
     @media screen and (min-width: $mobileWidth) {
       width: 200px;
+    }
+  }
+
+  @media screen and (min-width: $tabletWidth) {
+    .header &, .footer & {
+      box-shadow: 0px 5px 15px rgba($primaryColor, 0.2);
+    }
+
+    .banner & {
+      box-shadow: 0px 5px 15px rgba($primaryColor, 0.3);
+      &-transparent {
+        box-shadow: none;
+      }
+    }
+
+    .online_control & {
+      box-shadow: 0px 15px 15px rgba($primaryColor, 0.15);
+    }
+
+    .service & {
+      box-shadow: 0px 5px 15px rgba($primaryColor, 0.15);
     }
   }
 }

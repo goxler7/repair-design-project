@@ -4,10 +4,14 @@
   flex-direction: column;
   align-items: flex-start;
   
+  &--photo {
+    
+  }
+
   &--specs_container {
     max-width: 330px;
     width: 100%;
-    padding: 25px 10px 37px 31px;
+    padding: 25px 10px 43px 31px;
     margin-top: -127px;
     background: $defaultColorLight;
     box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.05);
@@ -20,6 +24,18 @@
 
   &--item {
     list-style-type: disc;
+
+    &:nth-child(7)::after {
+      content: "...";
+    }
+
+    &:last-child::after {
+      content: none;
+    }
+
+    &:nth-child(n+8) {
+      display: none; 
+    }
   }
 
   &--main_info {
@@ -36,6 +52,8 @@
     box-shadow: 5px 5px 10px $primaryColor-transparent-30;
   }
 
+
+
   @media screen and (min-width: $mobileWidth) {
     align-items: center;
 
@@ -47,11 +65,25 @@
       align-self: flex-start;
       width: 228px;
       height: 54px;
+      margin-top: -27px;
       font-size: 1.8rem;
       margin-left: 31px;
     }
   }
 
+  @media screen and (min-width: $smDesktopWidth) {
+    &--item {
+      list-style-type: disc;
+  
+      &:nth-child(7)::after {
+        content: none;
+      }
+  
+      &:nth-child(n+8) {
+        display: list-item; 
+      }
+    }
+  }
 }
 
 .cards_container {
@@ -65,11 +97,11 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+    align-items: flex-start;
   }
 
   @media screen and (min-width: $desktopWidth) {
     justify-content: space-between;
-    align-items: flex-start;
     &--card:not(:last-child) {
       margin-bottom: 0;
     }

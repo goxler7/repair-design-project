@@ -1,16 +1,29 @@
 .service {
+  display: none;
+  background: $defaultColorLight;
+
+
   .wrapper {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
     padding: 0 100px 0 0;
+    background: url("/assets/images/service__bg.png") no-repeat;
+    background-size: 833px auto;
+    background-position: -269px -23px;
+    margin-top: 179px;
   }
 
   &--form {
     background: $bgColor;
     width: 506px;
-    padding: 28px 49px;
+    height: 509px;
+    padding: 28px 49px 27px;
     display: flex;
     flex-direction: column;
+    box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.05);
+    position: relative;
 
     &_title {
       font-size: 2rem;
@@ -18,6 +31,107 @@
       text-align: center;
       align-self: center;
       width: 250px;
+      margin-bottom: 31px;
+    }
+
+    .text_input {
+      margin-bottom: 48px;
+    }
+
+    .btn {
+      margin-top: 25px;
+      align-self: flex-end;
     }
   }
+
+  &--help_block {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: -100px;
+
+    .inner_icon {
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+      background-color: $primaryColor;
+      background-image: url("/assets/images/pig-money.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-blend-mode: overlay;
+    }
+
+    .inner_text {
+      width: 240px;
+      font-weight: 700;
+      font-size: 2rem;
+      line-height: 1.25;
+      color: $primaryColor;
+      margin-left: 25px;
+    }
+  }
+
+  &--list {
+    background-image: url("/assets/images/service__bg_circle.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 67px 0 0 352px;
+    height: 636px;
+  }
+
+  &--item {
+    display: flex;
+    align-items: center;
+
+    .item_text {
+      font-weight: 500;
+      font-size: 1.8rem;
+      color: $defaultColorDark-lighter;
+    }
+
+    .item_number {
+      flex-shrink: 0;
+      font-family: $titleFont;
+      font-size: 1.8rem;
+      line-height: 42px;
+      text-align: center;
+      background: $primaryColor;
+      border-radius: 50%;
+      width: 42px;
+      height: 42px;
+    }
+
+    &:first-child {
+      .item_text {
+        margin-left: 17px;
+        max-width: 364px;
+      }
+    }
+
+    &:nth-child(2) {
+      margin: 63px 0 0 78px;
+      .item_text {
+        margin-left: 17px;
+      }
+    }
+
+    &:nth-child(3) {
+      margin: 118px 0 0 100px;
+      .item_text {
+        margin-left: 14px;
+      }
+    }
+
+    &:last-child {
+      margin: 116px 0 0 37px;
+      .item_text {
+        margin-left: 14px;
+        max-width: 225px;
+      }
+    }
+  }
+
+  @media screen and (min-width: $desktopWidth) {
+    display: block;
+  } 
 }

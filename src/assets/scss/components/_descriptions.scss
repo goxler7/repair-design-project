@@ -39,7 +39,7 @@
   }
 
   .design_project & {
-    @media screen and (min-width: $smDesktopWidth) {
+    @media screen and (min-width: $smTabletWidth) {
       color: $defaultColorDark-lighter;
     }
   }

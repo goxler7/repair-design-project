@@ -24,6 +24,10 @@
       color: $primaryColor;
       border-color: $primaryColor;
     }
+
+    .service & {
+      font-weight: 500;
+    }
   }
 
   .online_control & {
