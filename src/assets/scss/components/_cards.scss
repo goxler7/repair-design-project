@@ -50,6 +50,11 @@
     text-transform: uppercase;
     background: $primaryColor;
     box-shadow: 5px 5px 10px $primaryColor-transparent-30;
+
+    .design_project & {
+      justify-content: flex-start;
+      padding-left: 33px;
+    }
   }
 
 

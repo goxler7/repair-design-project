@@ -59,6 +59,13 @@
       font-size: 2rem;
     }
   }
+
+  .steps & {
+    color: $primaryColor;
+    font-size: 2.7rem;
+    line-height: 1.37;
+    text-align: left;
+  }
 }
 
 .block_title {
@@ -86,5 +93,11 @@
   .team & {
     font-size: 1.8rem;
     color: $defaultColorDark;
+  }
+
+  .steps & {
+    font-size: 1.5rem;
+    color: $primaryColor;
+    text-transform: uppercase;
   }
 }
