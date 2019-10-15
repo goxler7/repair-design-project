@@ -57,8 +57,6 @@
     }
   }
 
-
-
   @media screen and (min-width: $mobileWidth) {
     align-items: center;
 
@@ -98,17 +96,125 @@
   &--card {
     margin-bottom: 59px;
   }
+  &--person_card {
+    margin-bottom: 54px;
+  }
   @media screen and (min-width: $smTabletWidth) {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: flex-start;
+    
+    &--person_card {
+      margin: 0 10px 30px;
+    }
   }
 
   @media screen and (min-width: $desktopWidth) {
     justify-content: space-between;
     &--card:not(:last-child) {
       margin-bottom: 0;
+    }
+
+    &--person_card {
+      margin: 0 35px;
+    }
+  }
+}
+
+.person_card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  max-width: 339px;
+  padding: 35px 0 0 35px;
+
+  &--photo {
+    height: 358px;
+    overflow: hidden;
+  }
+
+  &--photo_item {
+    max-width: none;
+    position: relative;
+  }
+
+  &--info_container {
+    align-self: center;
+    text-align: center;
+    z-index: 1;
+    width: 233px;
+    margin-top: -81px;
+    padding: 22px 0 0;
+    background: $defaultColorLight;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.05);
+  }
+
+  &--experience {
+    margin-top: 24px;
+    padding: 13px 0;
+    font:  1.3rem/1.54 $titleFont;
+    text-transform: uppercase;
+    background: $primaryColor;
+  }
+
+  &--skill_icon {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    top: 0;
+    left: 0;
+    background: $primaryColor;
+    box-shadow: 0px 5px 20px $primaryColor-transparent-50;
+  }
+
+  &:first-child & {
+    &--photo_item {
+      width: 200%;
+      bottom: 13%;
+      right: 50%;
+    }
+  }
+
+  &:nth-child(2) & {
+    &--photo_item {
+      width: 175%;
+      right: 50%;
+    }
+  }
+
+  &:nth-child(3) & {
+    &--photo_item {
+      width: 215%;
+      right: 40%;
+    }
+  }
+
+  @media screen and (min-width: $smTabletWidth) {
+    max-width: 307px;
+
+    &:first-child & {
+      &--photo_item {
+        width: 230%;
+        bottom: 15%;
+        right: 64%;
+      }
+    }
+  
+    &:nth-child(2) & {
+      &--photo_item {
+        width: 200%;
+        right: 63%;
+      }
+    }
+  
+    &:nth-child(3) & {
+      &--photo_item {
+        width: 240%;
+        right: 46%;
+      }
     }
   }
 }

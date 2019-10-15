@@ -1,0 +1,67 @@
+.team {
+  background: $bgColor;
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .description {
+    margin-top: 20px;
+    max-width: 340px;
+  }
+
+  .cards_container {
+    margin-top: 41px;
+  }
+
+  &--separator {
+    display: none;
+    fill: $primaryColor;
+  }
+
+  &--separator + .description {
+    display: none;
+    line-height: 1.7;
+    max-width: 558px;
+  }
+
+  @media screen and (min-width: $smTabletWidth) {
+    .title {
+      margin-top: 25px;
+    }
+    
+    .description {
+      max-width: 558px;
+    }
+  }
+
+  @media screen and (min-width: $tabletWidth) {
+    &--separator {
+      display: block;
+    }
+    
+    &--separator + .description {
+      display: block;
+      
+    }
+  }
+
+  @media screen and (min-width: $smDesktopWidth) {
+    background: none;
+
+    .title {
+      margin-top: 95px;
+    }
+
+    &--separator {
+      margin-top: 53px;
+    }
+
+    &--separator + .description {
+      display: block;
+      color: $defaultColorDark-lighter;
+    }
+  }
+}
