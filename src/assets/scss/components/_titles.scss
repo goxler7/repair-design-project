@@ -38,7 +38,7 @@
     flex-direction: column;
     align-items: center;
     &--inner_text {
-      margin-bottom: 5px;
+      margin-bottom: 10px;
     }
   }
 
@@ -66,6 +66,22 @@
     line-height: 1.37;
     text-align: left;
   }
+
+  .clients & {
+    font-size: 2rem;
+    color: $defaultColorDark;
+  }
+
+  .question_form & {
+    font-size: 2rem;
+    line-height: 1.4;
+  }
+
+  .contacts & {
+    color: $primaryColor;
+    font-size: 1.8rem;
+    line-height: 1.38;
+  }
 }
 
 .block_title {
@@ -90,7 +106,7 @@
     }
   }
 
-  .team & {
+  .team &, .clients & {
     font-size: 1.8rem;
     color: $defaultColorDark;
   }
@@ -99,5 +115,9 @@
     font-size: 1.5rem;
     color: $primaryColor;
     text-transform: uppercase;
+  }
+
+  .clients & {
+    line-height: 1.28;
   }
 }

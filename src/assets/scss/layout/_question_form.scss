@@ -1,0 +1,64 @@
+.question_form {
+  background: $bgColor;
+  max-width: 883px;
+  padding: 34px 0;
+  z-index: 199;
+  position: relative;
+  z-index: 1;
+
+  .title {
+    flex-shrink: 0;
+    width: 100%;
+    margin-bottom: 52px;
+  }
+
+  .text_input:not(:last-of-type) {
+    margin: 0 0 63px 0;
+  }
+
+  .checkbox_input {
+    margin: 21px 0 67px;
+  }
+
+  @media screen and (min-width: $mobileWidth) {
+    margin: 0 auto;
+
+    .wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      max-width: 520px;
+    }
+  
+    .text_input {
+      max-width: 520px;
+      width: 100%;
+    }
+
+    .checkbox_input {
+      margin: 48px auto 50px;
+      width: 100%;
+      justify-content: center;
+    }
+
+    .btn {
+      margin: 0 auto;
+    }
+  }
+
+  @media screen and (min-width: $smTabletWidth) {
+    margin-top: 70px;
+
+    .wrapper {
+      padding: 0;
+    }
+    
+    .title {
+      margin-bottom: 46px;
+    }
+
+    .text_input:not(:last-of-type) {
+      width: 231px;
+    }
+  }
+}

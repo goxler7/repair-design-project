@@ -27,3 +27,27 @@
   text-transform: uppercase;
   color: $primaryColor;
 }
+
+.social_link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $primaryColor;
+  width: 39px;
+  height: 39px;
+  border-radius: 50%;
+
+  &--item {
+    width: 45%;
+    height: auto;
+  }
+
+  &:hover {
+    background: darken($primaryColor, 30%);
+  }
+
+  @media screen and (min-width: $smTabletWidth) {
+    width: 28px;
+    height: 28px;
+  }
+}

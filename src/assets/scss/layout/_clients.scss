@@ -1,0 +1,28 @@
+.clients {
+  display: none;
+  margin-top: 88px;
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .description {
+    align-self: center;
+    max-width: 380px;
+  }
+
+  .cards_container {
+    margin-top: 40px;
+  }
+
+  @media screen and (min-width: $smDesktopWidth) {
+    display: block;
+  }
+
+  @media screen and (min-width: $desktopWidth) {
+    .wrapper {
+      padding: 0 100px;
+    }
+  }
+}

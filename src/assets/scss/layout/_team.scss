@@ -28,6 +28,8 @@
   }
 
   @media screen and (min-width: $smTabletWidth) {
+    padding-bottom: 40px;
+
     .title {
       margin-top: 25px;
     }
@@ -44,24 +46,26 @@
     
     &--separator + .description {
       display: block;
-      
     }
   }
 
   @media screen and (min-width: $smDesktopWidth) {
+    padding-bottom: 0;
     background: none;
 
     .title {
       margin-top: 95px;
     }
 
-    &--separator {
-      margin-top: 53px;
-    }
-
     &--separator + .description {
       display: block;
       color: $defaultColorDark-lighter;
+    }
+  }
+
+  @media screen and (min-width: $desktopWidth) {
+    &--separator {
+      margin-top: 53px;
     }
   }
 }

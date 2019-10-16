@@ -3,6 +3,7 @@
 
   .wrapper {
     display: flex;
+    position: relative;
     min-height: 476px;
     padding: 0;
   }
@@ -26,6 +27,10 @@
   .description {
     max-width: 310px;
     margin-top: 16px;
+  }
+
+  .scrl_btn {
+    display: none;
   }
 
   &--btns_container {
@@ -99,6 +104,13 @@
 
     &--sidebar {
       display: flex;
+    }
+
+    .scrl_btn {
+      display: flex;
+      position: absolute;
+      bottom: -48px;
+      left: 0;
     }
   }
 }

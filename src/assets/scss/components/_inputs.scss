@@ -95,14 +95,16 @@
   &--check:checked + &--label .inner_box {
     background-color: $primaryColor;
     background-size: 10px;
-    transition: all 1s;
+    transition: all 0.3s;
   }
 
-  @media screen and (min-width: $smDesktopWidth) {
-    &--label {
-      color: $defaultColorDark;
-      .inner_box {
-        background-color: $defaultColorDark-lighter-transparent-30;
+  .online_control & {
+    @media screen and (min-width: $smDesktopWidth) {
+      &--label {
+        color: $defaultColorDark;
+        .inner_box {
+          background-color: $defaultColorDark-lighter-transparent-30;
+        }
       }
     }
   }

@@ -43,7 +43,12 @@
       color: $defaultColorDark-lighter;
     }
   }
+
+  .clients & {
+    color: $defaultColorDark-lighter;
+  }
 }
+
 
 .block_description {
   font-size: 1.3rem;
@@ -72,4 +77,9 @@
     color: $optionColor;
   }
 
+  .clients & {
+    font-size: 1.5rem;
+    line-height: 1.8;
+    color: $optionColor;
+  }
 }
